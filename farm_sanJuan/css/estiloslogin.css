@@ -1,0 +1,113 @@
+/* Colores */
+/* #03588C */ /*banner*/
+/* #048ABF */ /*cursor*/
+/* #052A59 */ /*letras*/
+/* #034C8C */ /**/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #052A59;
+    padding: 20px;
+}
+
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #048ABF;
+    border-radius: 5px;
+}
+
+.img-login {
+    width: 100px;
+    height: 100px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #03588C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.img-boton {
+    width: 50px;
+    height: 50px;
+}
+
+button:hover {
+    background-color: #048ABF;
+}
+
+#error-message {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    body {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .login-container {
+        width: 100%;
+        max-width: none;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    .img-login {
+        width: 80px;
+        height: 80px;
+    }
+
+    .img-boton {
+        width: 40px;
+        height: 40px;
+    }
+}

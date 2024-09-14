@@ -1,0 +1,322 @@
+/* Colores */
+/* #03588C */ /*banner*/
+/* #048ABF */ /*cursor*/
+/* #052A59 */ /*letras*/
+/* #034C8C */ /**/
+
+html {
+    scroll-padding-top: 95px; /* Ajusta este valor según la altura de tu banner */
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #052A59;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#cuadro-texto {
+    padding: 2rem;
+    padding-top: 120px;
+    flex: 1;
+    margin-left: 200px;
+    width: calc(100% - 250px);
+}
+
+/* Estilo para el banner */
+#banner {
+    width: 100%;
+    background-color: #03588C;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.img-banner-redes {
+    width: 40px;
+    height: 40px;
+    align-items: right;
+}
+
+.img-banner {
+    width: 40px;
+    height: 40px;
+}
+
+#banner h1 {
+    margin: 0;
+}
+
+/* Barra lateral fija */
+#barra {
+    width: 200px;
+    background-color: #f4f4f4;
+    color: #052A59;
+    height: 100vh;
+    padding: 1rem;
+    padding-top: 90px;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    z-index: 999;
+    text-align: center;
+}
+
+.img-barra {
+    width: 100px;
+    height: 100px;
+}
+
+.p-texto {
+    text-align: justify;
+    color: #052A59;
+}
+
+#barra h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#barra nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#barra nav ul li {
+    margin-bottom: 1rem;
+}
+
+#barra nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 0.5rem;
+    background-color: #03588C;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#barra nav ul li a:hover {
+    background-color: #048ABF;
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.img-section {
+    width: 40px;
+    height: 40px;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+.img-contactos {
+    width: 40px;
+    height: 40px;
+}
+
+.img-contactos-ubi {
+    width: 40px;
+    height: 40px;
+}
+
+#iframe {
+    width: 50%;
+    height: 400px;
+    border-radius: 2%;
+    border: solid 2px #048ABF;
+}
+
+.iframe-m {
+    text-align: center;
+}
+
+/* Pie de página */
+#footer {
+    margin-left: 230px;
+    background-color: #03588C;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    left: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 0.5rem 0 0.2rem 0;
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #048ABF;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 0.7rem;
+    background-color: #03588C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #048ABF;
+}
+
+/* Responsividad */
+@media (max-width: 1024px) {
+    #barra {
+        width: 150px;
+    }
+
+    #cuadro-texto {
+        margin-left: 150px;
+        width: calc(100% - 150px);
+    }
+
+    #footer {
+        margin-left: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    #barra {
+        width: 100px;
+        padding: 0.5rem;
+    }
+
+    #cuadro-texto {
+        margin-left: 100px;
+        width: calc(100% - 100px);
+    }
+
+    #footer {
+        margin-left: 100px;
+    }
+
+    #banner {
+        padding: 0.5rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    #iframe {
+        width: 80%;
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    #banner h1 {
+        font-size: 1.5rem;
+    }
+
+    #barra {
+        width: 80px;
+    }
+
+    #cuadro-texto {
+        margin-left: 80px;
+        width: calc(100% - 80px);
+    }
+
+    #footer {
+        margin-left: 80px;
+    }
+
+    form input, form textarea {
+        font-size: 0.8rem;
+    }
+
+    form button {
+        padding: 0.5rem;
+    }
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+/* nuevos 1109 22:54 */
+
+/* Estilo del contenedor de los íconos */
+.social-icons {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    padding-right: 10px;
+    transform: translateY(5%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000; /* para asegurar que siempre estén visibles */
+}
+
+/* Estilo para los íconos individuales */
+.social-icons a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+    border-radius: 11px;
+}
+
+/* Efecto de hover para los íconos */
+.social-icons a img:hover {
+    transform: scale(1.2);
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .social-icons {
+        top: initial;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-direction: row;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente para mejor visibilidad */
+        border-radius: 10px 10px 0 0;
+    }
+
+    /* Ajustar el tamaño de los íconos en pantallas pequeñas */
+    .social-icons a img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* Media query para pantallas muy pequeñas (teléfonos) */
+@media (max-width: 480px) {
+    .social-icons a img {
+        width: 25px;
+        height: 25px;
+    }
+}

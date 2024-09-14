@@ -1,0 +1,38 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\html_css_js\\farm_sanJuan\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7F6DECF9-9FEE-48E3-B18F-12D7C86559BC}|farm_sanJuan\\farm_sanJuan.csproj|c:\\html_css_js\\farm_sanjuan\\farm_sanjuan\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7F6DECF9-9FEE-48E3-B18F-12D7C86559BC}|farm_sanJuan\\farm_sanJuan.csproj|solutionrelative:farm_sanjuan\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\html_css_js\\farm_sanJuan\\farm_sanJuan\\index.html",
+              "RelativeDocumentMoniker": "farm_sanJuan\\index.html",
+              "ToolTip": "C:\\html_css_js\\farm_sanJuan\\farm_sanJuan\\index.html",
+              "RelativeToolTip": "farm_sanJuan\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-09-14T05:08:31.948Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

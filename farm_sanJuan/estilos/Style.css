@@ -1,0 +1,216 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    text-align-last: center;
+}
+
+h2 {
+    color: white;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #048ABF;
+    padding: 10px;
+    height: 80px;
+}
+
+.banner-left, .banner-center, .banner-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.banner-left {
+    justify-content: flex-start;
+    padding-left: 20px;
+    color: white;
+}
+
+.banner-center {
+    justify-content: center;
+    color: white;
+}
+
+.banner-right {
+    position: relative;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+
+.icono {
+    width: 60px;
+    height: 60px;
+    cursor: pointer; /*prueba  si da click*/
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+.main-container {
+    display: flex;
+    margin-top: 10px;
+    height: calc(96.5vh - 80px);
+    /*overflow: auto;*/
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #034C8C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: width 0.3s ease, opacity 0.3s ease;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: calc(96.5vh - 80px)
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    opacity: 1; /* Visibilidad completa por defecto */
+    transition: opacity 0.3s ease; /* Añade una transición de opacidad */
+}
+
+    .menu li {
+        margin: 10px 0;
+        position: relative;
+    }
+
+        .menu li a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #03588C;
+            border-radius: 4px;
+        }
+
+            .menu li a i {
+                margin-right: 8px;
+            }
+
+            .menu li a:hover {
+                background-color: #048ABF;
+            }
+
+.content {
+    flex: 1;
+    padding: 30px;
+    background-color: white;
+
+}
+
+.submenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 4px;
+    display: none;
+    background-color: #048ABF;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+.submenu li {
+    margin: 5px; /*Vamos a ver si fucniona */
+}
+
+
+    .submenu li a {
+        padding: 10px 15px; /* Añade espacio interno en el submenú */
+        color: white;
+        background-color: #048ABF;
+        display: flex;
+        align-items: center; /* Alinea verticalmente el icono y el texto */
+        border-radius: 4px;
+    }
+
+        .submenu li a i {
+            margin-right: 12px; /* Espacio entre el icono y el texto */
+        }
+
+
+        .submenu li a:hover {
+            background-color: #03588C;
+        }
+
+
+
+.toggle-sidebar {
+    position: absolute;
+    bottom: 10px;
+    left: 0px; /* Ajusta esta posición según tu diseño */
+    cursor: pointer;
+    color: white;
+    background-color: #048ABF;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    z-index: 100; /* Asegura que el botón esté por encima de otros elementos */
+}
+
+    .toggle-sidebar:hover {
+        background-color: #03588C;
+    }
+
+#toggle-icon {
+    font-size: 40px; /* Tamaño del ícono */
+    color: white; /* Color del ícono */
+}
+
+.sidebar.collapsed {
+    width: 0;
+    opacity: 0;
+}
+
+.menu.collapsed {
+    opacity: 0; /* Cambia la opacidad a 0 cuando esté colapsada */
+}
+
+
+
+.user-info {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    top: 81px; /* Ajustar pocicion */
+    right: 0;
+    background-color: white;
+    border: 1px solid #048ABF;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.cop {
+    background-color: #8C472E;
+}
+
+.portada {
+    width: 80%;
+    max-width: 900px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}

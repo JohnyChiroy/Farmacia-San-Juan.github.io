@@ -1,0 +1,102 @@
+.p-s {
+    text-align: justify;
+}
+
+/* Estilo del apartado de servs */
+.servs {
+    /* margin: 40px 0; */
+    /* padding: 2px; */
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Estilo de la cuadrícula de servs */
+.servs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Tres columnas */
+    gap: 20px;
+    /* Espacio entre las columnas */
+}
+
+/* Estilo de cada serv */
+.serv {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilo del icono de la serv */
+.icono-serv {
+    width: auto;
+    height: 90px;
+    /* margin-bottom: 10px; */
+}.p-s {
+    text-align: justify;
+}
+
+/* Estilo del apartado de servs */
+.servs {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Estilo de la cuadrícula de servs */
+.servs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Tres columnas por defecto */
+    gap: 20px;
+    /* Espacio entre las columnas */
+}
+
+/* Estilo de cada serv */
+.serv {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilo del icono de la serv */
+.icono-serv {
+    width: auto;
+    height: 90px;
+}
+
+/* Media queries para pantallas medianas */
+@media (max-width: 768px) {
+    .servs {
+        grid-template-columns: repeat(2, 1fr);
+        /* Dos columnas para pantallas medianas */
+    }
+
+    .p-s {
+        font-size: 14px;
+    }
+}
+
+/* Media queries para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+    .servs {
+        grid-template-columns: 1fr;
+        /* Una columna para pantallas pequeñas */
+    }
+
+    .serv {
+        padding: 10px;
+    }
+
+    .icono-serv {
+        height: 70px;
+        /* Reducir el tamaño del icono en pantallas pequeñas */
+    }
+
+    .p-s {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="img/usuario.png" type="image/png">
+    <link rel="stylesheet" href="css/estiloslogin.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Iniciar Sesión</h2>
+        <img class="img-login" src="img/usuario.png" alt="Icono de usuario">
+        <form id="loginForm" onsubmit="return login(event)">
+            <label for="Usuario">Usuario:</label>
+            <input type="text" id="Usuario" name="Usuario" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Ingresar</button>
+        </form>
+        <div id="error-message"></div>
+    </div>
+
+    <script src="javascript/login.js"></script>
+</body>
+</html>
